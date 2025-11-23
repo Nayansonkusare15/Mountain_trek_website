@@ -1,0 +1,153 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 50px;
+  background: #0d1b24;
+  color: #fff;
+}
+
+.logo {
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.navbar ul {
+  display: flex;
+  gap: 25px;
+  list-style: none;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  padding: 8px 15px;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+.navbar ul li a:hover,
+.navbar ul li .active {
+  background: #00d4ff;
+  color: #000;
+}
+
+/* PAGE CONTENT */
+.section {
+  width: 90%;
+  margin: 40px auto;
+  text-align: center;
+}
+
+.title {
+  font-size: 36px;
+  color: #0d1b24;
+  margin-bottom: 15px;
+}
+
+/* GRID OF GUIDES */
+.trek-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+  margin-top: 40px;
+}
+
+.trek-card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+  transition: 0.3s;
+  text-align: center;
+}
+
+.trek-card:hover {
+  transform: translateY(-7px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.22);
+}
+
+.trek-card img {
+  width: 100%;
+  height: 190px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.trek-card h3 {
+  margin-top: 12px;
+  font-size: 20px;
+  color: #0d1b24;
+}
+
+.trek-card p {
+  margin-top: 5px;
+  font-size: 15px;
+}
+
+/* FOOTER */
+footer {
+  background: #0d1b24;
+  padding: 15px;
+  color: #fff;
+  text-align: center;
+  margin-top: 40px;
+}
+
+/* ---------- ANIMATIONS ---------- */
+
+/* Fade-in */
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 1s ease forwards;
+}
+
+.delay-1 {
+  animation-delay: 0.3s;
+}
+
+.delay-2 {
+  animation-delay: 0.6s;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* Slide-up for cards */
+.slide-up {
+  opacity: 0;
+  animation: slideUp 1s ease forwards;
+}
+
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(40px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* RESPONSIVE */
+@media (max-width: 700px) {
+  .navbar {
+    padding: 15px 20px;
+  }
+  
+  .logo {
+    font-size: 24px;
+  }
+
+  .title {
+    font-size: 28px;
+  }
+}
+

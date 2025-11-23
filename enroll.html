@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trek Enrollment Form</title>
+  <link rel="stylesheet" href="enroll.css">
+</head>
+
+<body>
+
+  <nav class="navbar">
+    <h2 class="logo">TrekXplore</h2>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="treks.html">Treks</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="enroll.html" class="active">Enroll</a></li>
+    </ul>
+  </nav>
+
+  <section class="enroll-section">
+    <h1>Enroll for a Trek</h1>
+    <p>Fill out the form below to confirm your trek participation.</p>
+
+    <form class="enroll-form">
+      
+      <div class="form-group">
+        <label>Full Name</label>
+        <input type="text" placeholder="Enter your name" required>
+      </div>
+
+      <div class="form-group">
+        <label>Email Address</label>
+        <input type="email" placeholder="Enter your email" required>
+      </div>
+
+      <div class="form-group">
+        <label>Phone Number</label>
+        <input type="text" placeholder="Enter your phone number" required>
+      </div>
+
+      <div class="form-group">
+        <label>Select Trek</label>
+        <select required>
+          <option value="">-- Choose a Trek --</option>
+          <option>Himalayan Base Trek</option>
+          <option>Everest View Trek</option>
+          <option>Annapurna I</option>
+          <option>Dayara Bugyal Trek</option>
+          <option>Kedarkantha Trek</option>
+          <option>Gaumukh Tapovan Trek</option>
+          <option>Sahyadri Fort Trek</option>
+          <option>Dzukou Valley Trek</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label>Preferred Date</label>
+        <input type="date" required>
+      </div>
+
+      <div class="form-group">
+        <label>Number of People</label>
+        <input type="number" min="1" max="20" required>
+      </div>
+
+      <button type="submit" class="btn">Submit Enrollment</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 TrekXplore. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

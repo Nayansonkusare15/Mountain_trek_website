@@ -1,0 +1,127 @@
+/* ---- RESET ---- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* ---- NAVBAR ---- */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 50px;
+  background: #0d1b24;
+  color: #fff;
+}
+
+.logo {
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+  gap: 25px;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+  padding: 8px 15px;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+.navbar ul li a:hover,
+.navbar ul li .active {
+  background: #00d4ff;
+  color: #000;
+}
+
+/* ---- PAGE TITLE ---- */
+.section {
+  width: 90%;
+  margin: 40px auto;
+}
+
+.title {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 30px;
+  color: #0d1b24;
+}
+
+/* ---- TREK GRID ---- */
+.trek-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+  padding-bottom: 40px;
+}
+
+.trek-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.12);
+  transition: 0.3s;
+}
+
+.trek-card:hover {
+  transform: translateY(-7px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+.trek-card img {
+  width: 100%;
+  height: 190px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.trek-card h3 {
+  margin-top: 12px;
+  font-size: 20px;
+  color: #0d1b24;
+}
+
+.trek-card p {
+  font-size: 15px;
+  margin-top: 5px;
+}
+
+.price {
+  font-weight: bold;
+  font-size: 18px;
+  margin-top: 8px;
+  color: #00b7ff;
+}
+
+/* ---- FOOTER ---- */
+footer {
+  background: #0d1b24;
+  text-align: center;
+  color: white;
+  padding: 15px;
+  margin-top: 20px;
+}
+
+/* ---- RESPONSIVE ---- */
+@media (max-width: 700px) {
+  .navbar {
+    padding: 15px 20px;
+  }
+
+  .logo {
+    font-size: 24px;
+  }
+
+  .trek-card img {
+    height: 160px;
+  }
+}

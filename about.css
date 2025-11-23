@@ -1,0 +1,105 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 50px;
+  background: #0d1b24;
+  color: #fff;
+}
+
+.logo {
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+  gap: 25px;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+  padding: 8px 15px;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+.navbar ul li a:hover,
+.navbar ul li .active {
+  background: #00d4ff;
+  color: #000;
+}
+
+/* ABOUT SECTION */
+.about {
+  width: 90%;
+  max-width: 900px;
+  margin: 60px auto;
+  background: url('https://4kwallpapers.com/images/wallpapers/macos-sierra-mountain-peak-sunset-evening-stock-5k-3840x2160-3987.jpg');
+  background-repeat: no-repeat;
+  background-position: auto;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.12);
+}
+
+.about h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #0d1b24;
+}
+
+.about h2 {
+  font-size: 26px;
+  margin-top: 25px;
+  margin-bottom: 10px;
+  color: #250404;
+}
+
+.about p {
+  font-size: 17px;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* FOOTER */
+footer {
+  background: #0d1b24;
+  color: #fff;
+  text-align: center;
+  padding: 18px;
+  font-size: 14px;
+  margin-top: 50px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 700px) {
+  .navbar {
+    padding: 15px 20px;
+  }
+
+  .navbar ul {
+    gap: 15px;
+  }
+
+  .about {
+    padding: 25px;
+  }
+
+  .about h1 {
+    font-size: 28px;
+  }
+}
